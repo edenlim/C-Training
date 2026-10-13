@@ -164,22 +164,22 @@ printf("Age via pointer: %d\n", sPtr->age);
 
 ### 2.1 Standard Input / Output (`<stdio.h>`)
 
-| Function | Description | Example |
-| :--- | :--- | :--- |
-| `printf(...)` | Formatted output to stdout | `printf("Score: %d, Rate: %.2f%%\n", 100, 95.5);` |
-| `scanf(...)` | Formatted input from stdin | `int x; scanf("%d", &x);` |
-| `fgets(buf, sz, stream)` | Reads a line safely from a stream (including stdin) | `char str[64]; fgets(str, sizeof(str), stdin);` |
-| `puts(str)` | Prints string with automatic trailing newline | `puts("Operation complete.");` |
-| `getchar()` | Reads single character from stdin | `int ch = getchar();` |
-| `putchar(ch)` | Writes single character to stdout | `putchar('A');` |
-| `fopen(path, mode)` | Opens file stream (`"r"`, `"w"`, `"a"`, `"rb"`, etc.) | `FILE *f = fopen("data.txt", "r");` |
-| `fclose(stream)` | Closes an open file stream | `fclose(f);` |
-| `fprintf(stream, ...)` | Formatted output to a specific file stream | `fprintf(f, "Result: %d\n", 42);` |
-| `fscanf(stream, ...)` | Formatted input from a specific file stream | `fscanf(f, "%d", &num);` |
-| `fread(ptr, sz, n, f)` | Reads binary data chunks from file | `fread(buffer, sizeof(int), 10, f);` |
-| `fwrite(ptr, sz, n, f)` | Writes binary data chunks to file | `fwrite(buffer, sizeof(int), 10, f);` |
-| `perror(msg)` | Prints custom message + system error description | `perror("Error opening file");` |
-| `snprintf(buf, sz, ...)` | Safe formatted write into string buffer | `snprintf(buf, sizeof(buf), "ID: %d", id);` |
+| Function                 | Description                                           | Example                                           |
+| :----------------------- | :---------------------------------------------------- | :------------------------------------------------ |
+| `printf(...)`            | Formatted output to stdout                            | `printf("Score: %d, Rate: %.2f%%\n", 100, 95.5);` |
+| `scanf(...)`             | Formatted input from stdin                            | `int x; scanf("%d", &x);`                         |
+| `fgets(buf, sz, stream)` | Reads a line safely from a stream (including stdin)   | `char str[64]; fgets(str, sizeof(str), stdin);`   |
+| `puts(str)`              | Prints string with automatic trailing newline         | `puts("Operation complete.");`                    |
+| `getchar()`              | Reads single character from stdin                     | `int ch = getchar();`                             |
+| `putchar(ch)`            | Writes single character to stdout                     | `putchar('A');`                                   |
+| `fopen(path, mode)`      | Opens file stream (`"r"`, `"w"`, `"a"`, `"rb"`, etc.) | `FILE *f = fopen("data.txt", "r");`               |
+| `fclose(stream)`         | Closes an open file stream                            | `fclose(f);`                                      |
+| `fprintf(stream, ...)`   | Formatted output to a specific file stream            | `fprintf(f, "Result: %d\n", 42);`                 |
+| `fscanf(stream, ...)`    | Formatted input from a specific file stream           | `fscanf(f, "%d", &num);`                          |
+| `fread(ptr, sz, n, f)`   | Reads binary data chunks from file                    | `fread(buffer, sizeof(int), 10, f);`              |
+| `fwrite(ptr, sz, n, f)`  | Writes binary data chunks to file                     | `fwrite(buffer, sizeof(int), 10, f);`             |
+| `perror(msg)`            | Prints custom message + system error description      | `perror("Error opening file");`                   |
+| `snprintf(buf, sz, ...)` | Safe formatted write into string buffer               | `snprintf(buf, sizeof(buf), "ID: %d", id);`       |
 
 ---
 
