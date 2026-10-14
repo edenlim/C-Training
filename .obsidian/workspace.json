@@ -190,17 +190,17 @@
   },
   "active": "0eff8f903fbe1f0f",
   "lastOpenFiles": [
+    "chernobyl/main",
+    "chernobyl/map/map.c",
+    "chernobyl/map/map.h",
+    "chernobyl/map",
+    "chernobyl/main.c",
+    "chernobyl",
     "wordcounter/wc",
     "wordcounter/wc.c",
     "wordcounter",
     "ttt",
     "tic-tac-toe/ttt",
-    "tic-tac-toe/ttt.c",
-    "tic-tac-toe",
-    "reverser/reverse.c",
-    "reverser/reverse",
-    "reverser",
-    "test_reverser/reverse",
     "guide.md"
   ]
 }
